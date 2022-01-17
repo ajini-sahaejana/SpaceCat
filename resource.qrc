@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/aliencat.png</file>
+        <file>images/asteroidbrown.png</file>
+        <file>images/asteroidgray.png</file>
+        <file>images/broomcat.png</file>
+        <file>images/capecat.png</file>
+        <file>images/earth.jpg</file>
+        <file>images/gameover.png</file>
+        <file>images/mooncat.png</file>
+        <file>images/planecat.png</file>
+        <file>images/rocketcat.png</file>
+        <file>images/sky.jpg</file>
+        <file>images/ufocat.png</file>
+        <file>images/sky2.jpg</file>
+        <file>images/sky1080.jpg</file>
+        <file>images/burn2.png</file>
+        <file>images/gameover1.png</file>
+        <file>images/spacecat1.png</file>
+        <file>images/spacecatdown1.png</file>
+        <file>images/spacecatup1.png</file>
+        <file>images/burn3.png</file>
+        <file>images/logo.png</file>
+        <file>audio/bgAudio.mp3</file>
+        <file>images/spaceCatAbout.jpg</file>
+        <file>images/spaceCatChoseCat.jpg</file>
+        <file>images/spaceCatMain.jpg</file>
+    </qresource>
+</RCC>
