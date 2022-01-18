@@ -28,8 +28,12 @@ public:
     QWidget *tab;
     QGraphicsView *graphicsView;
     QPushButton *startButton;
+    QFrame *frame_3;
     QWidget *tab_2;
     QFrame *frame_2;
+    QPushButton *bellabutton;
+    QPushButton *leoButton;
+    QPushButton *miloButton;
     QWidget *tab_3;
     QFrame *frame;
 
@@ -135,23 +139,64 @@ public:
 "QPushButton:pressed {\n"
 "	background-color: rgb(33, 154, 154);\n"
 "}"));
+        frame_3 = new QFrame(tab);
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setGeometry(QRect(0, 0, 960, 640));
+        frame_3->setStyleSheet(QString::fromUtf8("background-image: url(:/images/spaceCatMain.jpg)"));
+        frame_3->setFrameShape(QFrame::StyledPanel);
+        frame_3->setFrameShadow(QFrame::Raised);
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setMinimumSize(QSize(960, 640));
+        tab_2->setMaximumSize(QSize(960, 640));
         frame_2 = new QFrame(tab_2);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setGeometry(QRect(0, 10, 961, 930));
-        frame_2->setMinimumSize(QSize(950, 930));
-        frame_2->setMaximumSize(QSize(961, 641));
-        frame_2->setStyleSheet(QString::fromUtf8("background-image: url(:/images/spaceCatChoseCat.jpg)"));
+        frame_2->setGeometry(QRect(0, 0, 960, 640));
+        frame_2->setMinimumSize(QSize(960, 640));
+        frame_2->setMaximumSize(QSize(960, 640));
+        frame_2->setStyleSheet(QString::fromUtf8("background-image: url(:/images/spaceCatChoseCatEmpty.jpg)"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
+        bellabutton = new QPushButton(frame_2);
+        bellabutton->setObjectName(QString::fromUtf8("bellabutton"));
+        bellabutton->setGeometry(QRect(30, 210, 300, 390));
+        sizePolicy.setHeightForWidth(bellabutton->sizePolicy().hasHeightForWidth());
+        bellabutton->setSizePolicy(sizePolicy);
+        bellabutton->setMaximumSize(QSize(300, 390));
+        bellabutton->setCursor(QCursor(Qt::PointingHandCursor));
+        bellabutton->setAutoFillBackground(false);
+        bellabutton->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"background-image: url(:/images/Bella.png)\n"
+""));
+        leoButton = new QPushButton(frame_2);
+        leoButton->setObjectName(QString::fromUtf8("leoButton"));
+        leoButton->setGeometry(QRect(330, 210, 300, 390));
+        sizePolicy.setHeightForWidth(leoButton->sizePolicy().hasHeightForWidth());
+        leoButton->setSizePolicy(sizePolicy);
+        leoButton->setMaximumSize(QSize(300, 390));
+        leoButton->setCursor(QCursor(Qt::PointingHandCursor));
+        leoButton->setAutoFillBackground(false);
+        leoButton->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"background-image: url(:/images/Leo.png)\n"
+""));
+        miloButton = new QPushButton(frame_2);
+        miloButton->setObjectName(QString::fromUtf8("miloButton"));
+        miloButton->setGeometry(QRect(630, 210, 300, 390));
+        sizePolicy.setHeightForWidth(miloButton->sizePolicy().hasHeightForWidth());
+        miloButton->setSizePolicy(sizePolicy);
+        miloButton->setMaximumSize(QSize(300, 390));
+        miloButton->setCursor(QCursor(Qt::PointingHandCursor));
+        miloButton->setAutoFillBackground(false);
+        miloButton->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"background-image: url(:/images/Milo.png)\n"
+""));
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
         frame = new QFrame(tab_3);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(10, 0, 961, 641));
+        frame->setGeometry(QRect(0, 0, 961, 641));
         frame->setMinimumSize(QSize(961, 641));
         frame->setMaximumSize(QSize(961, 641));
         frame->setStyleSheet(QString::fromUtf8("background-image: url(:/images/spaceCatAbout.jpg)"));
@@ -164,7 +209,7 @@ public:
 
         retranslateUi(Widget);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(Widget);
@@ -175,6 +220,9 @@ public:
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Space Cats", nullptr));
         startButton->setText(QCoreApplication::translate("Widget", "START GAME", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("Widget", "Play Game", nullptr));
+        bellabutton->setText(QString());
+        leoButton->setText(QString());
+        miloButton->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("Widget", "Chose your cat", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("Widget", "About", nullptr));
     } // retranslateUi

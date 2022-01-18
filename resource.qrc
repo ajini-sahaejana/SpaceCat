@@ -25,5 +25,9 @@
         <file>images/spaceCatAbout.jpg</file>
         <file>images/spaceCatChoseCat.jpg</file>
         <file>images/spaceCatMain.jpg</file>
+        <file>images/spaceCatChoseCatEmpty.jpg</file>
+        <file>images/Bella.png</file>
+        <file>images/Leo.png</file>
+        <file>images/Milo.png</file>
     </qresource>
 </RCC>

@@ -59,3 +59,21 @@ void Widget::on_startButton_clicked()
 //    music->play();
 }
 
+
+void Widget::on_bellabutton_clicked()
+{
+
+}
+
+
+void Widget::on_leoButton_clicked()
+{
+
+}
+
+
+void Widget::on_miloButton_clicked()
+{
+
+}
+
