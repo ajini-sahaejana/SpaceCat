@@ -6,17 +6,13 @@
 #include "catitem.h"
 
 BarrierItem::BarrierItem() :
-    topBarrier(new QGraphicsPixmapItem(QPixmap(":/images/burn2.png"))),
-    //bottomBarrier(new QGraphicsPixmapItem(QPixmap(":/images/burn2.png"))),
+    obstacle(new QGraphicsPixmapItem(QPixmap(":/images/burn2.png"))),
     pastShip(false)
 {
-    topBarrier->setPos(QPointF(0,0) - QPointF(topBarrier -> boundingRect().width()/2,
-                                              topBarrier->boundingRect().height() +120));
+    obstacle->setPos(QPointF(0,0) - QPointF(obstacle -> boundingRect().width()/2,
+                                              obstacle->boundingRect().height() +120));
 
-    //bottomBarrier->setPos(QPointF(0,0) + QPointF(bottomBarrier->boundingRect().width()/2, 60));
-
-    addToGroup(topBarrier);
-    //addToGroup(bottomBarrier);
+    addToGroup(obstacle);
 
     yPos = QRandomGenerator::global()->bounded(550);
     int xRandomizer = QRandomGenerator::global()->bounded(600);
@@ -41,8 +37,7 @@ BarrierItem::BarrierItem() :
 BarrierItem::~BarrierItem()
 {
     qDebug() << "Deleting Barrier";
-    delete topBarrier;
-    //delete bottomBarrier;
+    delete obstacle;
 }
 
 qreal BarrierItem::x() const
@@ -76,8 +71,7 @@ void BarrierItem::setX(qreal x)
 
 bool BarrierItem::shipCollides()
 {
-    QList<QGraphicsItem*> collidingItems = topBarrier->collidingItems();
-    //collidingItems.append(bottomBarrier->collidingItems());
+    QList<QGraphicsItem*> collidingItems = obstacle->collidingItems();
 
     foreach(QGraphicsItem * item, collidingItems){
        CatItem * catItem = dynamic_cast<CatItem*>(item);

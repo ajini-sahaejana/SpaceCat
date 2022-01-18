@@ -27,8 +27,7 @@ private:
 
     bool shipCollides();
 
-    QGraphicsPixmapItem * topBarrier;
-    //QGraphicsPixmapItem * bottomBarrier;
+    QGraphicsPixmapItem * obstacle;
     QPropertyAnimation * xAnimation;
 
     int yPos;

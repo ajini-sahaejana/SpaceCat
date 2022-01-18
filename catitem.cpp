@@ -8,7 +8,8 @@ CatItem::CatItem(QPixmap pixmap) :
     shipDirection(0)
 {
     setPixmap(pixmap);
-    setX(-325);
+    setX(-320);
+    setY(-180);
 
     QTimer * catShipTimer = new QTimer(this);
     connect(catShipTimer, &QTimer::timeout,[=]() {
@@ -17,7 +18,7 @@ CatItem::CatItem(QPixmap pixmap) :
 
     catShipTimer->start(200);
 
-    groundPosition = scenePos().y() + 190;
+    groundPosition = scenePos().y() + 350;
 
     yAnimation = new QPropertyAnimation(this, "y", this);
     yAnimation->setStartValue(scenePos().y());

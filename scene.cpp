@@ -139,12 +139,12 @@ void Scene::hideGameOverGraphics()
         return;
     }
     if(gameOverPix){
-        //removeItem(gameOverPix);
+        removeItem(gameOverPix);
         delete gameOverPix;
         gameOverPix = nullptr;
     }
     if(scoreTextItem){
-        //removeItem(scoreTextItem);
+        removeItem(scoreTextItem);
         delete scoreTextItem;
         scoreTextItem = nullptr;
     }

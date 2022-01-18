@@ -47,8 +47,8 @@ private:
     int score;
     int highscore;
 
-    QGraphicsPixmapItem * gameOverPix;
-    QGraphicsTextItem * scoreTextItem;
+    QGraphicsPixmapItem * gameOverPix = nullptr;
+    QGraphicsTextItem * scoreTextItem = nullptr;
 };
 
 #endif // SCENE_H

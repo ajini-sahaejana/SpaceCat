@@ -53,7 +53,7 @@
       </sizepolicy>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -191,9 +191,9 @@
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -209,18 +209,18 @@
           <colorrole role="Base">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="Window">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -229,9 +229,9 @@
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -247,18 +247,18 @@
           <colorrole role="Base">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="Window">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -267,9 +267,9 @@
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -285,18 +285,18 @@
           <colorrole role="Base">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="Window">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>25</red>
-             <green>101</green>
-             <blue>124</blue>
+             <red>33</red>
+             <green>138</green>
+             <blue>167</blue>
             </color>
            </brush>
           </colorrole>
@@ -313,13 +313,13 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	background-color: rgb(25, 101, 124);
+	background-color: rgb(33, 138, 167);
 	border: none;
 	padding-top: 5px;
 	border-radius: 10px;
 }
 QPushButton:hover {
-	background-color: rgb(33, 138, 167);
+	background-color: rgb(26, 172, 155);
 }
 QPushButton:pressed {
 	background-color: rgb(33, 154, 154);

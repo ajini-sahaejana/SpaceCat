@@ -12,6 +12,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     setWindowIcon(QIcon(":/images/logo.png"));
     ui->setupUi(this);
 
+    //Scene Instantiation
     scene = new Scene(this);
     scene->setSceneRect(-250,-300,500,600);
 
@@ -20,6 +21,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     pixItem->setPos(QPointF(0,0) - QPointF(pixItem->boundingRect().width()/2,
                                            pixItem->boundingRect().height()/2));
 
+//    Testing codes
 //    scene->addLine(-400,0,400,0,QPen(Qt::blue));
 //    scene->addLine(0,-400,0,400,QPen(Qt::blue));
 
@@ -33,7 +35,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     scene->addCat();
 
     //play audio continously
-    //gameAudio->play();
+    gameAudio->play();
 }
 
 Widget::~Widget()
@@ -43,8 +45,10 @@ Widget::~Widget()
 
 void Widget::on_startButton_clicked()
 {
+    //Start Game
     scene->startGame();
 
+    //play audio once the user clicks the Start Button
 //    if (gameAudio->state() == QMediaPlayer::PlayingState) {
 //        gameAudio->setPosition(0);
 //    } else if (gameAudio->state() == QMediaPlayer::StoppedState) {

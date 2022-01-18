@@ -1,0 +1,10 @@
+debug/barrieritem.o
+debug/catitem.o
+debug/main.o
+debug/scene.o
+debug/widget.o
+debug/qrc_resource.o
+debug/moc_barrieritem.o
+debug/moc_catitem.o
+debug/moc_scene.o
+debug/moc_widget.o

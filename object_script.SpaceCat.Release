@@ -1,0 +1,10 @@
+release/barrieritem.o
+release/catitem.o
+release/main.o
+release/scene.o
+release/widget.o
+release/qrc_resource.o
+release/moc_barrieritem.o
+release/moc_catitem.o
+release/moc_scene.o
+release/moc_widget.o
