@@ -127,8 +127,10 @@ release/qrc_resource.cpp: resource.qrc \
 		images/spaceCatChoseCat.jpg \
 		images/Milo.png \
 		images/sky2.jpg \
+		images/BellaSelected.png \
 		images/spaceCatChoseCatEmpty.jpg \
 		images/spacecat1.png \
+		images/MiloSelected.png \
 		images/burn2.png \
 		images/spacecatdown1.png \
 		images/burn3.png \
@@ -143,6 +145,7 @@ release/qrc_resource.cpp: resource.qrc \
 		images/gameover.png \
 		images/capecat.png \
 		images/spacecatup1.png \
+		images/LeoSelected.png \
 		images/gameover1.png \
 		images/spaceCatAbout.jpg \
 		images/asteroidbrown.png \
@@ -1029,7 +1032,9 @@ release/main.o: main.cpp widget.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtCore/qeventloop.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtGui/qguiapplication.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qinputmethod.h
+		C:/Qt/5.15.1/mingw81_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QSplashScreen \
+		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qsplashscreen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
 release/scene.o: scene.cpp scene.h \
@@ -1296,33 +1301,7 @@ release/widget.o: widget.cpp widget.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtCore/qmetaobject.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtMultimedia/qaudio.h \
 		C:/Qt/5.15.1/mingw81_64/include/QtNetwork/qnetworkconfiguration.h \
-		ui_widget.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QApplication \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qapplication.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtCore/qeventloop.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qguiapplication.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qinputmethod.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QFrame \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qframe.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QGraphicsView \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qpainter.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qtextoption.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qscrollarea.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlayout.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QPushButton \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtGui/qicon.h \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/QTabWidget \
-		C:/Qt/5.15.1/mingw81_64/include/QtWidgets/qtabwidget.h
+		ui_widget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\widget.o widget.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 

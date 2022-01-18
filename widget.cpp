@@ -16,6 +16,8 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     scene = new Scene(this);
     scene->setSceneRect(-250,-300,500,600);
 
+    connect(scene, SIGNAL(showPlayButton()), this, SLOT(on_showStartButton()));
+
     QGraphicsPixmapItem * pixItem = new QGraphicsPixmapItem(QPixmap(":/images/sky2.jpg"));
     scene-> addItem(pixItem);
     pixItem->setPos(QPointF(0,0) - QPointF(pixItem->boundingRect().width()/2,
@@ -35,7 +37,7 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     scene->addCat();
 
     //play audio continously
-    gameAudio->play();
+    //gameAudio->play();
 }
 
 Widget::~Widget()
@@ -47,6 +49,8 @@ void Widget::on_startButton_clicked()
 {
     //Start Game
     scene->startGame();
+    ui->startButton->hide();
+    ui->graphicsView->setFocus();
 
     //play audio once the user clicks the Start Button
 //    if (gameAudio->state() == QMediaPlayer::PlayingState) {
@@ -75,5 +79,10 @@ void Widget::on_leoButton_clicked()
 void Widget::on_miloButton_clicked()
 {
 
+}
+
+void Widget::on_showStartButton()
+{
+    ui->startButton->show();
 }
 

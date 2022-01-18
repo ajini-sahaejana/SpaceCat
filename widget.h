@@ -20,6 +20,14 @@ public:
 private slots:
     void on_startButton_clicked();
 
+    void on_bellabutton_clicked();
+
+    void on_leoButton_clicked();
+
+    void on_miloButton_clicked();
+
+    void on_showStartButton();
+
 private:
     Ui::Widget *ui;
     Scene * scene;

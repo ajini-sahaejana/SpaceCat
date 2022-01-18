@@ -49,23 +49,25 @@ qreal CatItem::y() const
 
 void CatItem::flyUp()
 {
-    yAnimation->stop();
-    rotationAnimation->stop();
+    if(y()>-400){
+        yAnimation->stop();
+        rotationAnimation->stop();
 
-    qreal curPosY = y();
+        qreal curPosY = y();
 
-    yAnimation->setStartValue(curPosY);
-    yAnimation->setEndValue(curPosY - scene()->sceneRect().height()/8);
-    yAnimation->setEasingCurve(QEasingCurve::OutQuad);
-    yAnimation->setDuration(285);
+        yAnimation->setStartValue(curPosY);
+        yAnimation->setEndValue(curPosY - scene()->sceneRect().height()/6);
+        yAnimation->setEasingCurve(QEasingCurve::OutQuad);
+        yAnimation->setDuration(285);
 
-    connect(yAnimation, &QPropertyAnimation::finished,[=](){
-        fallToGround();
-    });
+        connect(yAnimation, &QPropertyAnimation::finished,[=](){
+            fallToGround();
+        });
 
-    yAnimation->start();
+        yAnimation->start();
 
-    rotateTo(-20, 200, QEasingCurve::OutCubic);
+        rotateTo(-20, 200, QEasingCurve::OutCubic);
+    }
 
 }
 
@@ -124,7 +126,7 @@ void CatItem::fallToGround()
 
         rotateTo(90, 1100, QEasingCurve::InCubic);
     }
-    //qDebug() << y();
+    qDebug() << y();
 }
 
 void CatItem::updatePixmap()

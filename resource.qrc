@@ -29,5 +29,8 @@
         <file>images/Bella.png</file>
         <file>images/Leo.png</file>
         <file>images/Milo.png</file>
+        <file>images/BellaSelected.png</file>
+        <file>images/LeoSelected.png</file>
+        <file>images/MiloSelected.png</file>
     </qresource>
 </RCC>

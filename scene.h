@@ -25,8 +25,10 @@ public:
     int getScore() const;
 
 signals:
+    void showPlayButton();
 
 public slots:
+    void on_gameOver();
 
     // QGraphicsScene interface
 protected:

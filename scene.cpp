@@ -69,6 +69,11 @@ int Scene::getScore() const
     return score;
 }
 
+void Scene::on_gameOver()
+{
+    qDebug() << "game over!!";
+}
+
 bool Scene::getGameOn() const
 {
     return gameOn;
@@ -113,6 +118,8 @@ void Scene::mousePressEvent(QGraphicsSceneMouseEvent *event)
 
 void Scene::showGameOverGraphics()
 {
+    emit showPlayButton();
+
     gameOverPix = new QGraphicsPixmapItem(QPixmap(":/images/gameover1.png"));
     addItem(gameOverPix);
     gameOverPix->setPos(QPointF(0,0) - QPointF(gameOverPix->boundingRect().width()/2,
